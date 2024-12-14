@@ -36,3 +36,16 @@ spring:
       #自动提交时间间隔，单位ms
       auto-commit-interval: 1000
 
+
+mybatis-plus:
+  global-config:
+    db-config:
+
+      #驼峰下划线转换
+      #      column-underline: true
+
+      #逻辑删除配置
+      logic-delete-value: 0  # 数据删除时 设置为0
+      logic-not-delete-value: 1  # 数据没有删除时 设置为1
+      db-type: mysql # 数据库类型
+
